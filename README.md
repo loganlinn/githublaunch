@@ -40,7 +40,7 @@ Be sure to check out the help via `ghl help` for full command listing.
 
 ## Installation
 
-githublaunch is [hosted on rubygems][githuhblaunch] and can be installed
+githublaunch is [hosted on rubygems][githublaunch] and can be installed
 via `gem`:
 
 ```bash

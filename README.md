@@ -18,22 +18,22 @@ Here is some example usage:
 
 ```bash
 # Open page for specific commit
-> ghl show 1d780099df
+$ ghl show 1d780099df
 
 # Open page for last commit
-> ghl show
+$ ghl show
 
 # Open file browser for specific branch
-> ghl branch topic123
+$ ghl branch topic123
 
 # Open file browser for current branch
-> ghl branch
+$ ghl branch
 
 # Open the Network view
-> ghl network
+$ ghl network
 
 # Open page to create pull request from current branch to master
-> ghl pull master
+$ ghl pull master
 ```
 
 Be sure to check out the help via `ghl help` for full command listing.
@@ -44,7 +44,7 @@ githublaunch is [hosted on rubygems][githublaunch] and can be installed
 via `gem`:
 
 ```bash
-> gem install githublaunch
+gem install githublaunch
 ```
 
 ## License

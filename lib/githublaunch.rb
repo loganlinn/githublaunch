@@ -25,12 +25,7 @@ class GithubLaunch < Thor
 
   desc "compare BASE HEAD", "Open compare page between two branches (defaults to current branch)"
   def compare(base, head=nil)
-    if head.nil?
-      head = base
-      base = repo.head.name
-    end
-
-    launch "/compare/#{base}...#{head}"
+    launch "/compare/#{base}...#{head || repo.head.name}"
   end
 
   desc "show COMMIT", "Open a commit (defaults to last commit on current branch)"

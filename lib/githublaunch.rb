@@ -3,7 +3,7 @@ require 'pathname'
 require 'grit'
 
 class GithubLaunch < Thor
-  VERSION = "0.1.3"
+  VERSION = "0.1.4"
 
   desc "network", "Open network view"
   def network; launch "/network"; end
@@ -36,7 +36,7 @@ class GithubLaunch < Thor
 
   desc "pull BASE HEAD", "Open page to create pull request (head defaults to current branch)"
   def pull(base, head=nil)
-    launch "/pull/new/#{base}...#{head || repo.head.name}"
+    launch "/pull/new/#{base.sub(/\//, ":")}...#{head || repo.head.name}"
   end
 
   desc "version", "Displays current version"
